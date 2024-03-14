@@ -168,14 +168,14 @@ class HomeController
     {
         $subject = "Movie Ticket Booking Confirmation";
         $message = "Thank you for booking a ticket for '$movie_name'. Your payment of  ₦$price was successful. Your seat number is $seat_number.";
-
+//use your details 
         $mail = new PHPMailer();
         $mail->isSMTP();
         $mail->Host = 'smtp.gmail.com';
         $mail->SMTPAuth = true;
-        $mail->Username = 'ibrahimsobande191@gmail.com';
-        $mail->Password = 'ousijquyerrryqly';
-        $mail->SMTPSecure = 'tls';
+        $mail->Username = '';
+        $mail->Password = '';
+        $mail->SMTPSecure = '';
         $mail->Port = 587;
 
         $mail->setFrom('movieticketing@gmail.com', 'movie ticketing');
